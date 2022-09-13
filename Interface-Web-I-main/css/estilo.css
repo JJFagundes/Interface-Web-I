@@ -1,0 +1,287 @@
+body{
+	background-image: url(../img/cinza.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	font-family: 'Girassol', cursive;
+
+}
+
+header, footer{
+	background-color: #5f43ba;
+	padding: 1%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 1.5em;
+	line-height: 1.5;
+
+}
+
+.menu-opcoes{
+	text-align: center;
+
+}
+
+.fixo{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+
+}
+
+.container{
+	margin-top: 40%;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+
+}
+
+.ajustes{
+	line-height: 1;
+	text-align: center;
+
+}
+
+.ajustes li:hover{
+	background-color: #5f43ba;
+	color: purple;
+
+}
+
+center{
+	text-align: center;
+}
+
+.fundo{
+	background: #B29EF0;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3%;
+	font-size: 1.2em;
+
+}
+
+.formatar{
+	margin-top: 2%;
+	margin-bottom: 2%;
+
+}
+
+input[type=text], select {
+	width: 80%;
+	padding: 12px  20px;
+	display: block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #7955ED;
+	color: #fff;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+}
+
+#sobre{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+
+}
+
+#sobre .sobre{
+	text-align: center;
+}
+
+.imgsobre{
+	width: 20%;
+	height: 20%;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.imgsobre:hover{
+	transform: rotate(180deg);
+}
+
+#galeria{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+#galeria .galeria{
+	text-align: center;
+}
+
+.imggaleria{
+	width: 80%;
+	border-radius: 50%;
+
+}
+
+h1{
+	font-size: 1.5em;
+
+}
+
+h2{
+	font-size: 1.5em;
+
+}
+
+h3{
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.titulos{
+	text-align: center;
+	line-height: 2;
+}
+
+p{
+	text-align: center;
+	font-size: 1.1em;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.listastexto{
+	text-decoration: underline;
+	color: #fff;
+	font-weight: bolder;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	font-size: 1em;
+	line-height: 1.5;
+	text-align: center;
+}
+
+figure{
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.imgtexto{
+	border: 5px dashed #B29EF0;
+	width: 70%;
+}
+
+a:link {
+	color: #fff;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: #7955ED;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: red;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+  
+  a:active {
+	color: #38276E;
+	background-color: transparent;
+	text-decoration: underline;
+  }
+
+table{
+	border-collapse: collapse;
+	width: 80%;
+	color: #fff;
+	font-size: 1.2em;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 3%;
+	margin-bottom: 3%;
+
+}
+
+td, th{
+	border: 5px dashed #fff;
+	padding: 2%;
+
+}
+
+tr:nth-child(even) {
+	background-color: #5F43BA;
+}
+
+@media screen and (max-width: 599px) {
+	.container {
+	  margin-top: 65%;
+	}
+  }
+
+  @media screen and (min-width: 600px) {
+	.container {
+	  margin-top: 40%;
+	}
+  }
+
+  @media screen and (min-width: 768px) {
+	.container {
+	  margin-top: 20%; }
+
+	  header{
+		background-color: #5f43ba;
+		flex-direction: row;
+		font-size: 26px;
+		position: relative;
+	}
+
+	.menu-opcoes{
+		position: absolute;
+		right: 5%;
+		top: 45%;
+	}
+
+	.menu-opcoes ul li{
+		display: inline;
+		margin-left: 20px;
+	}
+
+	#sobre, #galeria{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	#sobre h1, h3, p{
+		width: 100%;
+		text-align: center;
+	}
+
+	#sobre .sobre, #galeria .galeria{
+		width: 45%;
+		text-align: center;
+	}
+
+	}
